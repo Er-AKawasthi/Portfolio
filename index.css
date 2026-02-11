@@ -1074,7 +1074,6 @@ img {
   border: 1px solid var(--border-glow);
   background: rgba(0, 0, 0, 0.3);
   transition: var(--transition);
-  max-height: 420px;
 }
 
 .demo-video-card:hover {
@@ -1084,7 +1083,7 @@ img {
 
 .demo-video {
   width: 100%;
-  max-height: 350px;
+  height: 350px;
   object-fit: contain;
   display: block;
   background: #000;
@@ -1209,8 +1208,8 @@ img {
   }
 
   .demo-video {
+    height: auto;
     aspect-ratio: 9 / 16;
-    max-height: none;
   }
 
   .cert-modal {
