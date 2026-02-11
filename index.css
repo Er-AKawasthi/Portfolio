@@ -1074,6 +1074,7 @@ img {
   border: 1px solid var(--border-glow);
   background: rgba(0, 0, 0, 0.3);
   transition: var(--transition);
+  max-height: 420px;
 }
 
 .demo-video-card:hover {
@@ -1083,7 +1084,7 @@ img {
 
 .demo-video {
   width: 100%;
-  max-height: 50vh;
+  max-height: 350px;
   object-fit: contain;
   display: block;
   background: #000;
@@ -1201,6 +1202,10 @@ img {
 @media (max-width: 768px) {
   .demo-videos {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .demo-video-card {
+    max-height: none;
   }
 
   .demo-video {
