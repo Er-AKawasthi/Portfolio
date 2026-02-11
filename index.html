@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhay Kumar Awasthi — AI & ML Engineer</title>
+  <meta name="description" content="Portfolio of Abhay Kumar Awasthi — Computer Science Engineer specializing in Machine Learning, Deep Learning, Computer Vision, and MLOps." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="greeting-line"></span>
+        Hello, I'm
+      </p>
+      <h1 class="hero-name">Abhay Kumar<br/><span class="gradient-text">Awasthi</span></h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-prefix">&gt;&nbsp;</span>
+        <span class="hero-title" id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Building intelligent systems at the intersection of<br/>
+        <strong>Machine Learning</strong>, <strong>Computer Vision</strong> &amp; <strong>MLOps</strong>.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="Resume.pdf" target="_blank" class="btn btn-outline">
+          <i class="fas fa-file-alt"></i> Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">8.6</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Internships</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm a <strong>Computer Science Engineering</strong> student at 
+            <strong>Rajkiya Engineering College, Kannauj (AKTU)</strong>, 
+            specializing in Machine Learning, Deep Learning, and Computer Vision.
+          </p>
+          <p>
+            I have proven experience in architecting <em>hybrid AI systems</em>, 
+            building <em>automated retraining pipelines</em>, and deploying 
+            <em>secure backend solutions</em>. My toolkit includes Python, TensorFlow, 
+            FastAPI, and MLOps tools like Docker and Celery.
+          </p>
+          <p>
+            When I'm not training models or debugging pipelines, you'll find me 
+            exploring the latest research papers in computer vision and contributing 
+            to open-source projects.
+          </p>
+          <div class="about-education">
+            <div class="edu-card glass-card">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>B.Tech in CSE</h4>
+                <p>REC Kannauj (AKTU) • Aug 2022 – Present</p>
+                <span class="edu-cgpa">CGPA: 8.6 / 10.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-title">abhay.py</span>
+            </div>
+            <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">AbhayAwasthi</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Abhay Kumar Awasthi"</span>
+        self.role = <span class="code-string">"AI & ML Engineer"</span>
+        self.college = <span class="code-string">"REC Kannauj"</span>
+        self.languages = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"C"</span>, 
+            <span class="code-string">"SQL"</span>, <span class="code-string">"Kotlin"</span>
+        ]
+    
+    <span class="code-keyword">def</span> <span class="code-func">get_interests</span>(self):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Deep Learning"</span>,
+            <span class="code-string">"Computer Vision"</span>,
+            <span class="code-string">"MLOps"</span>,
+            <span class="code-string">"System Architecture"</span>
+        ]</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">02.</span> Experience
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <h3>AI & ML Research Intern</h3>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jul 2025 – Aug 2025</span>
+            </div>
+            <h4 class="timeline-company">
+              <i class="fas fa-university"></i> Indian Institute of Technology (IIT) Kharagpur
+            </h4>
+            <ul class="timeline-details">
+              <li>Architected a <strong>Hybrid Mental Health Assessment System</strong>, bridging an Android app (edge inference) with a FastAPI backend for secure data aggregation.</li>
+              <li>Engineered an <strong>Automated Model Retraining Pipeline</strong> using Celery and Redis, enabling continuous model improvement via professional counselor feedback (Human-in-the-Loop).</li>
+              <li>Implemented <strong>Bi-LSTM models</strong> for sequential facial landmark processing and secured the platform using anonymous ID hashing.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Celery</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Bi-LSTM</span>
+              <span class="tag">MediaPipe</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <h3>AI & Cloud Intern</h3>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Apr 2025 – May 2025</span>
+            </div>
+            <h4 class="timeline-company">
+              <i class="fas fa-building"></i> Edunet Foundation (Microsoft–AICTE Initiative)
+            </h4>
+            <ul class="timeline-details">
+              <li>Completed a 4-week intensive internship on <strong>Foundations of AI</strong>, sponsored by Microsoft and AICTE.</li>
+              <li>Gained experience in <strong>Azure Cloud</strong>, Generative AI, and Large Language Models (LLMs).</li>
+              <li>Designed prototype solutions leveraging <strong>OpenAI APIs</strong> and <strong>Azure Cognitive Services</strong>.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Azure</span>
+              <span class="tag">OpenAI</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">Gen AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">03.</span> Projects
+      </h2>
+      <div class="projects-grid">
+        <div class="project-card project-card-featured glass-card reveal-up">
+          <div class="project-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="project-header">
+            <h3>Mental Health Monitoring System</h3>
+            <span class="project-subtitle">MOCHAN & SAHAY</span>
+          </div>
+          <p class="project-desc">
+            Architected a <strong>Hybrid Mental Health Assessment System</strong>, bridging an Android app 
+            (edge inference) with a FastAPI backend for secure data aggregation.
+          </p>
+          <ul class="project-details-list">
+            <li><i class="fas fa-microchip"></i> Built the client-side Android applications using <strong>MediaPipe</strong> for real-time facial Action Unit extraction on-device.</li>
+            <li><i class="fas fa-server"></i> Engineered an <strong>Automated Model Retraining Pipeline</strong> using Celery and Redis, enabling continuous model improvement via professional counselor feedback (Human-in-the-Loop).</li>
+            <li><i class="fas fa-brain"></i> Implemented <strong>Bi-LSTM models</strong> for sequential facial landmark processing and secured the platform using anonymous ID hashing.</li>
+            <li><i class="fas fa-database"></i> Designed the database schema using <strong>SQLite</strong> to manage counselor labels and clinical notes.</li>
+          </ul>
+          <div class="project-demos">
+            <h4 class="demo-heading"><i class="fas fa-play-circle"></i> App Demos</h4>
+            <div class="demo-videos">
+              <div class="demo-video-card">
+                <video controls preload="metadata" poster="" class="demo-video">
+                  <source src="videos/MOCHAN.mp4" type="video/mp4" />
+                  Your browser does not support the video element.
+                </video>
+                <span class="demo-label">MOCHAN App</span>
+              </div>
+              <div class="demo-video-card">
+                <video controls preload="metadata" poster="" class="demo-video">
+                  <source src="videos/SHAHAY.mp4" type="video/mp4" />
+                  Your browser does not support the video element.
+                </video>
+                <span class="demo-label">SAHAY App</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Android</span>
+            <span class="tag">MediaPipe</span>
+            <span class="tag">Bi-LSTM</span>
+            <span class="tag">Celery</span>
+            <span class="tag">Redis</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Human-in-the-Loop</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Er-AKawasthi" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal-up">
+          <div class="project-icon">
+            <i class="fas fa-face-smile"></i>
+          </div>
+          <div class="project-header">
+            <h3>Real-Time Face Recognition</h3>
+            <span class="project-subtitle">Surveillance System</span>
+          </div>
+          <p class="project-desc">
+            Developed a YOLOv8-based facial recognition model utilizing 
+            OpenCV for real-time surveillance applications with high 
+            accuracy and low-latency inference.
+          </p>
+          <div class="project-tags">
+            <span class="tag">YOLOv8</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Python</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Er-AKawasthi" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal-up">
+          <div class="project-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="project-header">
+            <h3>Face Clustering</h3>
+            <span class="project-subtitle">Unsupervised Learning</span>
+          </div>
+          <p class="project-desc">
+            Implemented face clustering using K-Means and DBSCAN algorithms 
+            in Python with Scikit-learn for automatic grouping of faces 
+            without labelled data.
+          </p>
+          <div class="project-tags">
+            <span class="tag">K-Means</span>
+            <span class="tag">DBSCAN</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Er-AKawasthi" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">04.</span> Tech Stack
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category glass-card reveal-up">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-items">
+            <span class="skill-chip"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-chip"><i class="fas fa-c"></i> C</span>
+            <span class="skill-chip"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-chip"><i class="fab fa-android"></i> Kotlin</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal-up">
+          <div class="skill-cat-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Frameworks</h3>
+          <div class="skill-items">
+            <span class="skill-chip">TensorFlow</span>
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Scikit-learn</span>
+            <span class="skill-chip">OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal-up">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-items">
+            <span class="skill-chip"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">Celery</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-chip"><i class="fab fa-github"></i> GitHub</span>
+            <span class="skill-chip">MediaPipe</span>
+            <span class="skill-chip">YOLO</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal-up">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Domains</h3>
+          <div class="skill-items">
+            <span class="skill-chip">Deep Learning</span>
+            <span class="skill-chip">MLOps</span>
+            <span class="skill-chip">System Architecture</span>
+            <span class="skill-chip">Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">05.</span> Certifications
+      </h2>
+      <div class="cert-grid">
+        <!-- 1. NPTEL Internship Certificate -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/Internship_Certificate_Nptel.jpeg')">
+          <div class="cert-preview">
+            <img src="certificates/Internship_Certificate_Nptel.jpeg" alt="NPTEL Internship Certificate" loading="lazy" />
+          </div>
+          <h3>NPTEL Internship Certificate</h3>
+          <p class="cert-issuer">NPTEL — IIT Kharagpur</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> 2024</p>
+          <p class="cert-detail">Official NPTEL internship completion certificate for academic contributions and course completion.</p>
+          <a href="certificates/Nptel_Internship_Certificate.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 2. Microsoft / Edunet Internship -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/Edunet_MS_Certificate.png')">
+          <div class="cert-preview">
+            <img src="certificates/Edunet_MS_Certificate.png" alt="Edunet Microsoft Internship Certificate" loading="lazy" />
+          </div>
+          <h3>AI Foundations — Microsoft & AICTE</h3>
+          <p class="cert-issuer">Edunet Foundation</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Apr – May 2025</p>
+          <p class="cert-detail">4-week intensive internship on Foundations of AI including Azure Cloud, LLMs, and Generative AI.</p>
+          <a href="certificates/Edunet_Certificate.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 3. Introduction to Machine Learning -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/Introduction_To_ML.jpg')">
+          <div class="cert-preview">
+            <img src="certificates/Introduction_To_ML.jpg" alt="Introduction to Machine Learning Certificate" loading="lazy" />
+          </div>
+          <h3>Introduction to Machine Learning</h3>
+          <p class="cert-issuer">NPTEL — IIT Kharagpur</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> 2024</p>
+          <p class="cert-detail">Fundamentals of machine learning algorithms, model training and evaluation techniques.</p>
+        </div>
+
+        <!-- 4. NPTEL — Introduction to Internet of Things -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/NPTEL_IoT.png')">
+          <div class="cert-preview">
+            <img src="certificates/NPTEL_IoT.png" alt="NPTEL IoT Certificate" loading="lazy" />
+          </div>
+          <h3>Introduction to Internet of Things</h3>
+          <p class="cert-issuer">NPTEL — IIT Kharagpur</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Jan – Apr 2025</p>
+          <p class="cert-detail">Scored <strong>86%</strong> (Elite). IoT fundamentals, protocols, and real-world applications.</p>
+          <a href="certificates/Nptel_IOT.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 5. NPTEL — Industry 4.0 & Industrial IoT -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/NPTEL_Industry4.png')">
+          <div class="cert-preview">
+            <img src="certificates/NPTEL_Industry4.png" alt="NPTEL Industry 4.0 Certificate" loading="lazy" />
+          </div>
+          <h3>Industry 4.0 & Industrial IoT</h3>
+          <p class="cert-issuer">NPTEL — IIT Kharagpur</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Jul – Oct 2024</p>
+          <p class="cert-detail">Scored <strong>81%</strong> (Elite). Achieved <strong>Top 5% (Topper)</strong> distinction in NPTEL examination.</p>
+          <a href="certificates/NPTEL_Industry4_IoT.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 6. NPTEL — Data Analytics with Python -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/dataanalystwithpython.png')">
+          <div class="cert-preview">
+            <img src="certificates/dataanalystwithpython.png" alt="Data Analytics with Python Certificate" loading="lazy" />
+          </div>
+          <h3>Data Analytics with Python</h3>
+          <p class="cert-issuer">NPTEL — IIT Roorkee</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Jan – Apr 2024</p>
+          <p class="cert-detail">Scored <strong>81%</strong> (Elite). Statistical analysis, data visualization and Python-based analytics.</p>
+          <a href="certificates/Data_Analytics_Python.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 7. NPTEL — Database Management System -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/NPTEL_DBMS.png')">
+          <div class="cert-preview">
+            <img src="certificates/NPTEL_DBMS.png" alt="NPTEL DBMS Certificate" loading="lazy" />
+          </div>
+          <h3>Database Management System</h3>
+          <p class="cert-issuer">NPTEL — IIT Kharagpur</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Jul – Sep 2025</p>
+          <p class="cert-detail">Scored <strong>63%</strong> (Elite). Normalization, query optimization and transaction management.</p>
+          <a href="certificates/DBMS_Certificate.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+
+        <!-- 8. Docker & Kubernetes -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/Docker_Certificate.png')">
+          <div class="cert-preview">
+            <img src="certificates/Docker_Certificate.png" alt="Docker Certificate" loading="lazy" />
+          </div>
+          <h3>Docker & Kubernetes Fundamentals</h3>
+          <p class="cert-issuer">Scaler Masterclass</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> May 2024</p>
+          <p class="cert-detail">Mastered containerization and orchestration techniques for deploying scalable applications.</p>
+        </div>
+
+        <!-- 9. C-DAC Ethical Hacking -->
+        <div class="cert-card glass-card reveal-up" onclick="openCertModal('certificates/CDAC_Certificate.png')">
+          <div class="cert-preview">
+            <img src="certificates/CDAC_Certificate.png" alt="C-DAC Ethical Hacking Certificate" loading="lazy" />
+          </div>
+          <h3>Ethical Hacking & Penetration Testing</h3>
+          <p class="cert-issuer">C-DAC Noida — Cyber Gyan Project</p>
+          <p class="cert-date"><i class="far fa-calendar-alt"></i> Nov – Dec 2024</p>
+          <p class="cert-detail">Completed Virtual Internship and training under Cyber Gyan Project.</p>
+          <a href="certificates/CDAC_Certificate.pdf" target="_blank" class="cert-pdf-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-file-pdf"></i> View PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate Lightbox Modal -->
+      <div class="cert-modal" id="certModal" onclick="closeCertModal()">
+        <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
+        <img class="cert-modal-img" id="certModalImg" src="" alt="Certificate" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">06.</span> Get In Touch
+      </h2>
+      <p class="contact-intro reveal-up">
+        I'm actively looking for opportunities in AI/ML engineering and research.
+        Whether you have a question, a project idea, or just want to say hello — 
+        my inbox is always open!
+      </p>
+      <div class="contact-grid reveal-up">
+        <a href="mailto:er.awasthi83@gmail.com" class="contact-card glass-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p>er.awasthi83@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/abhay-kumar-awasthi-9a6411257" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+          <i class="fab fa-linkedin"></i>
+          <h4>LinkedIn</h4>
+          <p>Abhay Kumar Awasthi</p>
+        </a>
+        <a href="https://github.com/Er-AKawasthi" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+          <i class="fab fa-github"></i>
+          <h4>GitHub</h4>
+          <p>Er-AKawasthi</p>
+        </a>
+        <!-- <a href="tel:+918218135283" class="contact-card glass-card">
+          <i class="fas fa-phone"></i>
+          <h4>Phone</h4>
+          <p>+91 8218135283</p>
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-logo">
+          <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+        </p>
+        <p class="footer-text">Designed & Built by <strong>Abhay Kumar Awasthi</strong></p>
+        <div class="footer-socials">
+          <a href="mailto:er.awasthi83@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/abhay-kumar-awasthi-9a6411257" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Er-AKawasthi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Abhay Kumar Awasthi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
