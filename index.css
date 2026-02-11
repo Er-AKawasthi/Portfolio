@@ -1083,11 +1083,10 @@ img {
 
 .demo-video {
   width: 100%;
-  aspect-ratio: 9 / 16;
+  max-height: 50vh;
   object-fit: contain;
   display: block;
   background: #000;
-  max-height: 70vh;
 }
 
 .demo-label {
@@ -1206,6 +1205,7 @@ img {
 
   .demo-video {
     aspect-ratio: 9 / 16;
+    max-height: none;
   }
 
   .cert-modal {
