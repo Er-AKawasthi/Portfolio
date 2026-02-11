@@ -1084,9 +1084,10 @@ img {
 .demo-video {
   width: 100%;
   aspect-ratio: 9 / 16;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   background: #000;
+  max-height: 70vh;
 }
 
 .demo-label {
